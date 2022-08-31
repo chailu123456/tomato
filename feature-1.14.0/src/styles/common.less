@@ -1,0 +1,153 @@
+@import "./variables";
+// 边框
+.border(@type:solid,@size:1px,@color,red) {
+  border: @type @size @color;
+}
+.border(top,@type:solid,@size:1px,@color,red) {
+  border-top: @type @size @color;
+}
+.border(bottom,@type:solid,@size:1px,@color,red) {
+  border-bottom: @type @size @color;
+}
+.border(left,@type:solid,@size:1px,@color,red) {
+  border-left: @type @size @color;
+}
+.border(right,@type:solid,@size:1px,@color,red) {
+  border-right: @type @size @color;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #a5ccc4;
+}
+.el-scrollbar {
+  // background: #a5ccc4;
+}
+// 圆角
+.radius(@size:10px) {
+  border-radius: @size;
+}
+
+// 查询新增按钮
+.searchBtn() {
+  .btn(80,36,10px,@blueBg,14px);
+}
+
+// 确定按钮
+.confirmBtn() {
+  .btn(@width,@height,10px,@blueBg,16px);
+}
+
+// 取消按钮
+.cancelBg() {
+  .btn(@width,@height,10px,@cancelBg,16px);
+}
+// 导入导出
+.blackBtn() {
+  .btn(@width,@height,10px,@blackBtn,16px);
+}
+.btn(@w:@width,@h:@height,@r:10px,@bgc:@blueBg,@fz:16px) {
+  background-color: @blueBg;
+  width: @w;
+  height: @h;
+  text-align: center;
+  display: inline-block;
+  line-height: @h;
+  font-size: @fz;
+  .radius(@r);
+}
+.router-icon {
+  color: #fff !important;
+}
+.router-icon-arrow {
+  font-size: 8px !important;
+}
+
+.el-submenu__title {
+  font-size: 16px !important;
+  color: #fff !important;
+}
+a {
+  text-decoration: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.container {
+  background: #fff;
+}
+.main {
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.main-color {
+  color: #1f9f85;
+}
+.page {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.f-r {
+  float: right;
+}
+.delete {
+  color: rgb(245, 108, 108) !important;
+}
+
+.common-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#nprogress .bar {
+  background: #1f9f85 !important; //自定义颜色
+}
+
+.icon-circle(@type: "+", @color: #1f9f85, @right: -30px, @left: unset, @width: 15px, @lh: 13px) {
+  position: relative;
+
+  &::after {
+    cursor: pointer;
+    content: @type;
+    position: absolute;
+    right: @right;
+    left: @left;
+    top: 50%;
+    transform: translateY(-50%);
+    width: @width;
+    height: @width;
+    line-height: @lh;
+    border-radius: 100%;
+    border: 1px solid @color;
+    color: @color;
+    text-align: center;
+    font-size: @width;
+  }
+}
+
+// 按钮链接颜色
+.table-link {
+  color: @rp-color-text-link;
+}
+
+// ElMessageBox 的danger 危险按钮，不要用el-button--danger，有点问题
+.el-button--danger-box {
+  color: #fff;
+  background-color: #f56c6c !important;
+  border-color: #f56c6c !important;
+
+  &:hover {
+    background: #f78989 !important;
+    border-color: #f78989 !important;
+  }
+}

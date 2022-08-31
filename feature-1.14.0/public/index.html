@@ -1,0 +1,54 @@
+<!--
+ * @Author: 宋绍华
+ * @Date: 2022-04-16 10:36:56
+ * @LastEditTime: 2022-04-28 10:22:41
+ * @LastEditors: 宋绍华
+ * @Description:
+ * @FilePath: \tomato-pc\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- 增加DNS预解析 -->
+  <!-- <link rel="dns-prefetch" href="//domain.com" /> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <script src="./js/wwLogin-1.0.0.js"></script>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <!-- 使用CDN的CSS文件 -->
+  <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" />
+    <% } %>
+
+      <!-- 使用CDN的JS文件 -->
+      <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+        <script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+        <% } %>
+          <noscript>
+            <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+                enabled.
+                Please enable it to continue.</strong>
+          </noscript>
+          <div id="app"></div>
+          <!-- built files will be auto injected -->
+</body>
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c822dda24b443266105183d1f7724c7f";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+</html>

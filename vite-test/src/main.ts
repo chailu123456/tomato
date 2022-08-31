@@ -1,0 +1,23 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "@/styles/index.less";
+import { store, key } from "./store";
+import ElementPlus from "element-plus";
+import "@/theme/index.css";
+import locale from "element-plus/lib/locale/lang/zh-cn";
+import "normalize.css";
+import "@/styles/iconfont/iconfont.css";
+import { registerGlobComp } from "./components";
+import "dayjs/locale/zh-cn";
+// import i18n from "./plugins/i18n";
+const app = createApp(App);
+(async (app) => {
+  registerGlobComp(app);
+  app.use(ElementPlus, { size: "small", zIndex: 3000, locale });
+  app.use(store, key).use(router);
+  // app.use(i18n, { locale: "zh-cn" });
+  await router.isReady();
+  app.mount("#app");
+  // router.isReady().then(() => app.mount("#app"));
+})(app);

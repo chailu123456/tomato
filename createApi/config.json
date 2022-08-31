@@ -1,0 +1,5 @@
+{
+  "Cookie": "Hm_lvt_c822dda24b443266105183d1f7724c7f=1654479201; _yapi_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjkyOSwiaWF0IjoxNjU2ODk3MDY3LCJleHAiOjE2NTc1MDE4Njd9.o-thaIeIsAFciX-azLwyT1o-UVLNPMIJtZOzz_jyATs",
+  "getYapiById": "https://yapi.petrvet.com/api/interface/get?id=",
+  "getYapiList": "https://yapi.petrvet.com/api/interface/list?page=1&limit=20&project_id="
+}

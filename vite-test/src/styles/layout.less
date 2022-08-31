@@ -1,0 +1,104 @@
+@imgurl: "/assets/aside-bg.png";
+
+.float-right {
+  float: right;
+}
+.el-menu {
+  border-right: none !important;
+}
+::v-deep(.el-calendar-table .el-calendar-day) {
+  height: 200px;
+  // min-height: 100px;
+}
+::v-deep(.el-calendar-table .el-calendar-day:hover) {
+  background: rgba(50, 210, 178, 0.1);
+}
+::v-deep(.el-submenu__title, .el-menu-item) {
+  &:hover {
+    color: #1f9f85 !important;
+    i {
+      color: #1f9f85 !important;
+    }
+    background-color: #ebf8f6 !important;
+  }
+  i {
+    color: #fff !important;
+  }
+}
+::v-deep(.el-menu-item.is-active) {
+  background: url("~@/assets/aside-bg.png") no-repeat center !important;
+  background-size: 90% !important;
+  background-position-x: 25px !important;
+  i {
+    color: #1f9f85 !important;
+  }
+}
+::v-deep(.el-menu-item) {
+  padding-left: 50px !important;
+  &:hover {
+    color: #1f9f85 !important;
+    background: url("~@/assets/aside-bg.png") no-repeat center !important;
+    background-size: 90% !important;
+    background-position-x: 25px !important;
+  }
+}
+.el-menu-vertical-collapse:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+
+.zoom-fade-enter-active,
+.zoom-fade-leave-active {
+  transition: transform 0.35s, opacity 0.28s ease-in-out;
+}
+
+.zoom-fade-enter-from {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.zoom-fade-leave-to {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.teleport__wrapper__sideHeader {
+  box-sizing: border-box;
+  padding-left: 20px;
+  // line-height: 83px;
+  font-weight: 700;
+  font-size: 20px;
+  height: 83px;
+  border-bottom: 2px solid rgba(233, 233, 233, 1);
+}
+
+.card__header__left {
+  float: left;
+}
+.card__header__right {
+  float: right;
+  display: flex;
+  div {
+    margin-right: 30px;
+  }
+  .card__header__progress {
+    color: rgba(41, 152, 255, 1);
+  }
+  .card__header__time {
+    color: rgba(31, 159, 133, 1);
+  }
+}
+// .open-size-leave-active,
+// .open-size-enter-active {
+//   transition: all 5s ;
+// }
+
+// .open-size-enter-from {
+//   flex:0;
+// }
+// .open-size-enter-to {
+//   flex:0 0 400px;
+// }
+// .open-size-leave-to {
+//   flex:0;
+// }

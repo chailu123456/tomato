@@ -1,0 +1,58 @@
+{
+  "id": "2544806",
+  "name": "番茄项目管理系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "21574119",
+      "name": "文档@3x",
+      "font_class": "wendang3x1",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "21574068",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "21565912",
+      "name": "番茄logo@3x",
+      "font_class": "fanqielogo3x",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "21565524",
+      "name": "产品@3x",
+      "font_class": "chanpin3x",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "21565525",
+      "name": "看板@3x",
+      "font_class": "kanban3x",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "21565528",
+      "name": "迭代@3x",
+      "font_class": "diedai3x",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "21565530",
+      "name": "团队@3x",
+      "font_class": "tuandui3x",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    }
+  ]
+}

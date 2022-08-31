@@ -1,0 +1,263 @@
+@imgurl: "/assets/aside-bg.png";
+
+.float-right {
+  float: right;
+}
+.el-menu {
+  border-right: none !important;
+}
+/* button */
+.el-button--primary:not(.is-plain) {
+  // --el-button-hover-border-color: var(--el-color-primary-light-11);
+  // --el-button-hover-bg-color: var(--el-color-primary-light-11);
+}
+.el-button--primary {
+  // --el-button-active-bg-color: var(--el-color-primary-light-10);
+  // --el-button-active-border-color: var(--el-color-primary-light-11);
+}
+.el-button--primary {
+  &:hover {
+    background-color: var(--el-color-primary-light-11);
+    border-color: var(--el-color-primary-light-11);
+  }
+}
+
+// .el-button--text {
+//   color: #1f9f85;
+// }
+:deep(.el-calendar-table .el-calendar-day) {
+  height: 185px;
+}
+:deep(.el-calendar-table .el-calendar-day:hover) {
+  background: rgba(50, 210, 178, 0.1);
+}
+:deep(tr) {
+  z-index: 9 !important;
+}
+
+// 多个时间选择
+.date-pick-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  /* 左边select框 */
+  .el-select {
+    --el-select-input-focus-border-color: #e6e6e6;
+
+    position: absolute;
+    width: 100px;
+
+    .el-input__wrapper {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none;
+      outline: none;
+      padding: 0;
+    }
+  }
+
+  /* 时间日期选择 */
+  .el-date-editor {
+    margin-left: 99px;
+  }
+}
+
+:deep(.el-input__wrapper) {
+  padding: 0 12px;
+}
+.el-input__inner,
+.el-input--small .el-input__inner {
+  min-height: 32px !important;
+  line-height: 32px;
+}
+
+.el-date-editor--daterange {
+  padding: 0 10px;
+  &:hover {
+    box-shadow: none;
+  }
+}
+.el-range-editor.el-input__inner {
+  padding: 0 10px;
+}
+.el-dialog__header {
+  margin-right: 0;
+}
+.el-button--small {
+  height: 32px !important;
+  line-height: 31px;
+}
+
+.el-form--inline .el-form-item {
+  margin-right: 10px;
+  .el-form-item__label {
+    line-height: 32px;
+  }
+}
+
+.el-dialog__footer {
+  border-top: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.el-form-item__label {
+  line-height: 31px !important;
+}
+
+.page {
+  height: 32px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 101;
+  .el-pagination {
+    display: inline-block;
+    .el-pagination__sizes {
+      display: inline-block;
+    }
+    .el-pagination__total {
+      display: inline-block;
+    }
+    button {
+      display: inline-block;
+    }
+    .el-pager {
+      display: inline-block;
+      li {
+        display: inline-block;
+      }
+    }
+    .el-pagination__jump {
+      display: inline-block;
+      margin-left: 10px;
+      .el-pagination__editor {
+        min-width: 40px !important;
+        width: 40px !important;
+        .el-input__inner {
+          min-width: 32px;
+          height: 30px !important;
+          line-height: 30px;
+        }
+      }
+    }
+    .el-input__wrapper {
+      padding: 0;
+      .el-input__inner {
+        height: 30px !important;
+        line-height: 30px;
+      }
+      .el-input__suffix {
+        position: relative;
+        right: 10px;
+      }
+    }
+    .el-select {
+      .el-input {
+        width: 100px;
+        margin: 0 5px;
+      }
+    }
+  }
+  li.is-active {
+    background-color: rgba(31, 159, 133, 1) !important;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+.el-textarea__inner {
+  border: none;
+  &:hover {
+    border-color: rgba(31, 159, 133, 1) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px rgba(31, 159, 133, 1) inset;
+  }
+}
+.el-input-group {
+  line-height: 32px;
+}
+:deep(.cell) {
+  text-align: center;
+}
+.el-table__row {
+  .table-title {
+    .cell {
+      font-size: 14px !important;
+    }
+  }
+}
+.table-column-left {
+  .cell {
+    text-align: left !important;
+  }
+}
+.el-table__cell {
+  border-right: none !important;
+}
+.el-tag {
+  background-color: rgb(233, 245, 243);
+  border-color: rgb(210, 236, 231);
+}
+
+.el-menu-vertical-collapse:not(.el-menu--collapse) {
+  width: 120px;
+  min-height: 400px;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid #dcdfe6 !important;
+}
+
+.el-table {
+  z-index: 9;
+  thead {
+    color: #615e5e;
+  }
+}
+.el-table--small {
+  .el-table__cell {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}
+
+.zoom-fade-enter-active,
+.zoom-fade-leave-active {
+  transition: transform 0.35s, opacity 0.28s ease-in-out;
+}
+
+.zoom-fade-enter-from {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.zoom-fade-leave-to {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.teleport__wrapper__sideHeader {
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  height: 83px;
+  border-bottom: 2px solid rgba(233, 233, 233, 1);
+}
+
+.card__header__left {
+  float: left;
+}
+.card__header__right {
+  float: right;
+  display: flex;
+  div {
+    margin-right: 0px;
+  }
+  .card__header__progress {
+    color: rgba(41, 152, 255, 1);
+  }
+  .card__header__time {
+    color: rgba(31, 159, 133, 1);
+  }
+}
